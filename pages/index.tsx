@@ -1,14 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import TopNavigation from "@components/TopNavigation";
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-gray-700 text-white'>
-      Hello World!
+    <div className="content-container">
+      <TopNavigation />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
