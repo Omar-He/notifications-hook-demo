@@ -24,6 +24,13 @@ const TopNavigation = () => {
       <div className="relative">
         <BellIcon onClick={openList} />
         <NotificationsPopup open={contentList} />
+        {contentList && (
+          <div
+            id="backdrop"
+            className="fixed top-0 bottom-0 left-0 right-0 bg-gray-700 opacity-50 z-10"
+            onClick={() => showList(false)}
+          ></div>
+        )}
       </div>
       <UserCircle />
     </div>
